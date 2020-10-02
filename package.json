@@ -1,0 +1,43 @@
+{
+  "scripts": {
+    "dev": "webpack-dev-server --inline --hot --config ./webpack.dev.js",
+    "build": "webpack --config ./webpack.prod.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "leaflet": "^1.7.1",
+    "preact": "^10.4.8",
+    "preact-router": "^3.2.1",
+    "ts-md5": "^1.2.7",
+    "typescript": "^3.9.3",
+    "unistore": "^3.5.1"
+  },
+  "devDependencies": {
+    "@testing-library/preact": "^1.0.2",
+    "@types/chai": "^4.2.11",
+    "@types/jest": "^25.2.3",
+    "@types/leaflet": "^1.5.17",
+    "awesome-typescript-loader": "^5.2.1",
+    "chai": "^4.2.0",
+    "css-loader": "^3.5.3",
+    "enzyme": "^3.11.0",
+    "enzyme-to-json": "^3.5.0",
+    "html-webpack-plugin": "^4.3.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.0.1",
+    "sass": "^1.26.7",
+    "sass-google-fonts": "^1.0.1",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "ts-jest": "^26.0.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "name": "sdver",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Nick Haupka",
+  "license": "ISC",
+  "description": ""
+}

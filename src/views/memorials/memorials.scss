@@ -1,0 +1,43 @@
+.infobox {
+  width: 80%;
+  margin: auto;
+  height: 280px;
+  display: flex;
+  padding: 20px;
+  overflow: hidden;
+  outline: none;
+  margin-bottom: 10px;
+
+  &:hover, &:focus {
+    cursor: pointer;
+    box-shadow: 0 0 5px 0 #d9d9d9;
+  }
+
+  &:empty {
+    background-color: #F2F2F2;
+  }
+
+  .infobox-image {
+    margin-right: 15px;
+    pointer-events: none;
+
+    img {
+      width: 270px;
+      height: 235px;
+      top: 0;
+      object-fit: contain;
+      pointer-events: none;
+    }
+  }
+  .infobox-text {
+    pointer-events: none;
+    .infobox-text-header {
+      font-size: 17px;
+      font-weight: 700;
+      margin: 35px 0 5px 0;
+      line-height: 24px;
+    }
+    .infobox-text-body {
+    }
+  }
+}
