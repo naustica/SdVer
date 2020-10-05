@@ -26,6 +26,8 @@ npm run dev
 - um Bilder (aus Wikimedia Commons) in einer Weboberfläche darzustellen, muss ein MD5-Hash aus dem Dateinamen berechnet werden
 - Siehe: https://stackoverflow.com/a/34402875/12580727
 
+- Skalierung von Bildern: einige Bilder sind mehrere MB groß.
+
 ### Eindeutige Kennzeichnung von Denkmälern
 
 - Wikidata bietet kein passendes Attribut um spezielle Denkmäler für dieses Projekt zu selektieren
