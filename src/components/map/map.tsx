@@ -4,6 +4,7 @@ import L from 'leaflet'
 import './map.scss'
 
 interface Props {
+  label: string,
   latitude: number,
   longitude: number
 }
@@ -32,10 +33,15 @@ export default class OpenStreetMap extends Component<Props> {
   }
 
   public componentDidUpdate = (prevProps: Props): void => {
-    const { latitude, longitude } = this.props
+    const { latitude, longitude, label } = this.props
     if (latitude != prevProps.latitude || longitude != prevProps.longitude) {
       this.map.setView([latitude, longitude], 14)
       this.marker.setLatLng([latitude, longitude])
+    }
+
+    if (label != prevProps.label) {
+      this.marker.bindPopup('<b>'+label+'</b>')
+                 .openPopup()
     }
   }
 
@@ -61,7 +67,8 @@ export default class OpenStreetMap extends Component<Props> {
   }
 
   private createMarker = (): void => {
-    const { latitude, longitude } = this.props
+    const { latitude, longitude, label } = this.props
+    console.log(label)
     this.marker = L.marker([latitude, longitude]).addTo(this.map)
   }
 

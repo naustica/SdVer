@@ -4,12 +4,20 @@ import { Md5 } from 'ts-md5/dist/md5'
 
 import './memorials.scss'
 
+type Items = {
+  id: string,
+  label: string,
+  longitude: number,
+  latitude: number,
+  imageUrl: string
+}
+
 interface Props {
 
 }
 
 interface State {
-  items: any
+  items: Items[]
 }
 
 export default class Memorials extends Component<Props, State> {

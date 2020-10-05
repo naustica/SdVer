@@ -81,13 +81,12 @@ export default class Item extends Component<Props, State> {
       <div class="item-container">
         <div class="go-back" onClick={this.goBack}><span class="arrow-left"></span>Zurück</div>
         <h1 class="item-container-header">{label}</h1>
-        <OpenStreetMap latitude={latitude} longitude={longitude} />
+        <OpenStreetMap latitude={latitude} longitude={longitude} label={label} />
       </div>
     )
   }
 
   public render = (): ComponentChild => {
-    console.log(this.state.imageUrl)
     return (
       <div>
         {this.renderItem()}
