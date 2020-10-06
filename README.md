@@ -4,6 +4,10 @@
 
 Prototype für https://www.tib.eu/de/service/aktuelles/detail/spuren-der-vergangenheit-verbrechen-der-gestapo-digital-sichtbar-machen
 
+## Beispiel
+
+![Beispiel](media/example.gif)
+
 ## Setup
 
 ```bash
@@ -17,6 +21,16 @@ cd SdVer && npm install
 ```bash
 npm run dev
 ```
+
+## Mapvisualisierung mit Leaflet
+
+https://leafletjs.com/examples/quick-start/
+
+## Informationen aus Wikidata
+
+Beispielanfrage:
+
+https://www.wikidata.org/wiki/Special:EntityData/Q627414.json
 
 ## Problemfelder
 
